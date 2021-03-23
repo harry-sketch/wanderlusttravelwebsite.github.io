@@ -1,0 +1,80 @@
+#contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+.contact{
+    width:50%;
+    
+}
+.contact form{
+    width:100%;
+}
+.form-group input ,textarea {
+    display: inline-block;
+    width:100%;
+    padding:0.7rem 0.9rem;
+    margin:0.6rem 0.8rem;
+    outline:none;
+    border:2px solid #fff;
+    border-radius: 0.6rem;
+    background-color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+}
+::placeholder{
+    color:#000;
+}
+
+.cta{
+    display: block;
+    margin:0px auto;
+    padding:0.4rem 0.6rem;
+    outline:none;
+    background-color: rgba(255,255,255,0.4);
+    text-align: center;
+    font-size: 0.7rem;
+    border:2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+    cursor:pointer;
+}
+
+.cta:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+
+/* Medai Query */
+
+@media only screen and (max-width:830px){
+
+    .contact{
+        height:60%;
+    }
+    .form-group input textarea{
+        padding:6px 8px;
+        margin:46px 8px;
+        font-size:10px;
+    }  
+    
+    .cta{
+        padding:5px 8px;
+        font-size: 5px;
+    }
+}
+
+
+@media only screen  and (max-width:560px){
+    .form-group input ,textarea{
+        padding:8px;
+        margin:5px;
+        font-size: 8px;
+    }
+    .cta{
+        padding:4px 5px;
+        font-size: 6px;
+    }
+}
+
